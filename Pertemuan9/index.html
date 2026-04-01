@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Pertemuan 9</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
 </head>
 <body>
     <h1 id="demo"></h1>
     <script>
-        localStorage.setItem("name","Morgan Alan");
-        document.getElementById("demo").innerHTML = localStorage.getItem("name");
+        //localStorage.setItem("name","Nur Rachmat"); //test comment
+        //document.getElementById("demo").innerHTML = localStorage.getItem("name");
 
-        sessionStorage.setItem("name","Morgan Alan"); //test comment
+        //sessionStorage.setItem("name","Rachmat Nur"); //test comment
         document.getElementById("demo").innerHTML = sessionStorage.getItem("name");
 
-        //lihat perbedaan cara kerja keduanya dengan memberi tanda komentar pada set item
+        //lihat perbedaan cara kerja keduanya dengan memberi tanda kometar // pada set item
         //dan membuka tutup browser
 
-        //cookie
-        //document.cookie = "username=Morgan Alan Cookie;";
+        //cookie -- 
+        //document.cookie = "username=Nur Rachmat Cookie;";
     </script>
 </body>
 </html>
