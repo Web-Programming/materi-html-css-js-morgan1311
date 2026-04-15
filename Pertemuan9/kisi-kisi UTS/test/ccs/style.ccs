@@ -1,0 +1,138 @@
+/* Global Styles */
+:root {
+  --kuning:      #e1bd2d;   /* garis bawah judul */
+  --coklat:      #8b4513;   /* footer */ 
+}
+
+/* Title Color */
+h2 {
+    color: rgb(0, 42, 0);
+}
+
+.garis-bawah {
+  width: 55px;
+  height: 4px;
+  background-color: var(--kuning);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+/* HEADER SECTION */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1018/1200/400');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-subtitle {
+    font-size: 1.0rem;
+}
+
+/* ABOUT SECTION */
+/* Gambar Profil : Kiri */
+#about {
+    background-color: rgb(228, 233, 228);
+}
+.about-img-wrapper {
+    border-radius: 50%;
+    box-shadow: 0 8px 40px rgba(45, 122, 45, 0.2);
+    display: inline-block;
+    overflow: hidden;
+}
+
+.about-img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/*Teks Penjelasan : Kanan */
+.text-paragraph {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Small Card Section */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Info Card Section */
+/* background color */
+#info-card {
+    background-color: #b3ceb3;
+    color: white;
+}
+
+/* info-card */
+.info-card-modified {
+    border: none;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    background: white;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info-card-modified:hover {
+  box-shadow: 0 8px 24px rgba(45,106,79,0.12);
+  transform: translateY(-4px);
+  transition: all 0.25s;
+}
+
+/* icon-card */
+.icon-card {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+}
+
+/* Contact Section */
+/* background */
+#Contact {
+    background-color: rgb(228, 233, 228);
+}
+
+/* button */
+.btn-kirim {
+    background-color: var(--kuning);
+    font-weight: 750;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* footer */
+footer {
+    font-size: 0.9rem;
+    background-color: var(--coklat);
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-sub {
+    opacity: 0.5;
+}
+
+.footer-link {
+    color: rgb(203, 240, 203);
+    text-decoration: none;
+    font-weight: 450;
+}

@@ -1,0 +1,53 @@
+/* https://app-privacy-policy-generator.firebaseapp.com/ */
+
+/*Untuk mendeteksi apakah input yang dimasukkan pengguna adalah format email yang benar (seperti adanya tanda @ dan domain .com), ada dua cara utama yang biasa digunakan dalam pengembangan web:
+
+1. Cara Termudah: Menggunakan HTML5
+Kamu tidak perlu JavaScript rumit jika hanya ingin validasi dasar. Cukup ganti type="text" menjadi type="email" pada tag <input> di HTML kamu.
+
+HTML
+<input type="email" id="inputEmail" required>
+Browser secara otomatis akan menolak form jika isinya tidak memiliki struktur email yang benar saat tombol submit diklik.
+
+2. Cara JavaScript: Menggunakan Regex (Regular Expression)
+Jika kamu ingin mendeteksinya di dalam kode JavaScript yang kamu buat tadi (misalnya agar bisa mengubah border jadi merah), kamu bisa menggunakan Regex. Regex adalah pola karakter yang digunakan untuk mencocokkan kombinasi karakter dalam string.
+
+Berikut adalah logika yang bisa kamu tambahkan ke fungsi klik tombolmu:
+
+JavaScript
+// Pola standar untuk mengecek email
+var polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Cara menggunakannya dalam logika IF
+if (!polaEmail.test(email)) {
+    alert("Format email salah!");
+    document.getElementById('inputEmail').style.borderColor = 'red';
+}
+Implementasi Lengkap pada Kode Kamu
+Mari kita gabungkan ke dalam kode yang kamu miliki agar validasinya lebih kuat:
+
+JavaScript
+var tombolKirim = document.getElementById('btnKirim');
+
+tombolKirim.addEventListener('click', function() {
+    var email = document.getElementById('inputEmail').value;
+    
+    // Regex untuk validasi email
+    var polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // 1. Cek apakah kosong
+    if (email === '') {
+        document.getElementById('inputEmail').style.borderColor = 'red';
+        alert("Email tidak boleh kosong");
+    } 
+    // 2. Cek apakah formatnya salah
+    else if (!polaEmail.test(email)) {
+        document.getElementById('inputEmail').style.borderColor = 'red';
+        alert("Format email tidak valid (contoh: nama@mail.com)");
+    } 
+    // 3. Jika benar
+    else {
+        document.getElementById('inputEmail').style.borderColor = 'green';
+        // Lanjutkan proses kirim...
+    }
+});*/
